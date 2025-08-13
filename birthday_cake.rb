@@ -53,12 +53,14 @@ class BirthdayCake
     birthday_cake = BirthdayCake.new(age)
     puts birthday_cake.greet
     puts birthday_cake.to_s
+    birthday_cake.lit = true  
     puts "Lighting candles..."
     birthday_cake.candles_status
     puts birthday_cake.to_s
     puts "Singing happy birthday..."
     puts birthday_cake.sing
     puts "Blowing out candles..."
+    birthday_cake.lit = false 
     birthday_cake.to_s
     puts birthday_cake.to_s
 
